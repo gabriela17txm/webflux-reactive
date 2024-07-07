@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/webflux-course-reactive.iml" filepath="$PROJECT_DIR$/.idea/webflux-course-reactive.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/webflux-course-reactive.webflux-course-reactive.main.iml" filepath="$PROJECT_DIR$/.idea/modules/webflux-course-reactive.webflux-course-reactive.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/webflux-course-reactive.main.iml" filepath="$PROJECT_DIR$/.idea/modules/webflux-course-reactive.main.iml" />
     </modules>
   </component>
 </project>
