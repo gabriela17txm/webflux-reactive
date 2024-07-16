@@ -1,6 +1,6 @@
 package gabriela_21.webflux_course_reactive.controller.exceptions;
 
-import com.mongodb.DuplicateKeyException;
+import org.springframework.dao.DuplicateKeyException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.web.bind.annotation.ControllerAdvice;
