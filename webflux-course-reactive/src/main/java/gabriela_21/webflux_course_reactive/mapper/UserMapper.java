@@ -2,6 +2,7 @@ package gabriela_21.webflux_course_reactive.mapper;
 
 import gabriela_21.webflux_course_reactive.entity.UserEntity;
 import gabriela_21.webflux_course_reactive.model.request.UserRequest;
+import gabriela_21.webflux_course_reactive.model.response.UserResponse;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
@@ -12,4 +13,6 @@ public interface UserMapper {
 
     @Mapping(target = "id", ignore = true)
     UserEntity toEntity(UserRequest request);
+
+    UserResponse toResponse( final UserEntity userEntity);
 }
