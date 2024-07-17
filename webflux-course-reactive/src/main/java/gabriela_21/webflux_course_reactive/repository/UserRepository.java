@@ -4,6 +4,7 @@ import gabriela_21.webflux_course_reactive.entity.UserEntity;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.mongodb.core.ReactiveMongoTemplate;
 import org.springframework.stereotype.Repository;
+import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @Repository
@@ -17,5 +18,9 @@ public class UserRepository {
 
     public Mono<UserEntity> findById(String id) {
          return mongoTemplate.findById(id, UserEntity.class);
+    }
+
+    public Flux<UserEntity> findAll() {
+         return mongoTemplate.findAll(UserEntity.class);
     }
 }
